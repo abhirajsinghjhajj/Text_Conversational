@@ -54,14 +54,14 @@ topsis_score = distance_worst / (distance_best + distance_worst)
 df['TOPSIS Score'] = topsis_score
 df['Rank'] = df['TOPSIS Score'].rank(ascending=False)
 
-df.to_csv("topsis_results_conversational.csv", index=False)
+df.to_csv("topsis_resultsl.csv", index=False)
 
 plt.figure(figsize=(10, 6))
 sns.barplot(x=df['TOPSIS Score'], y=df['Model'], order=df.sort_values('TOPSIS Score', ascending=False)['Model'])
 plt.xlabel("TOPSIS Score")
 plt.ylabel("Conversational AI Model")
 plt.title("TOPSIS Ranking of Conversational AI Models")
-plt.savefig("topsis_ranking_conversational.png")
+plt.savefig("topsis_ranking.png")
 plt.show()
 
 print("TOPSIS ranking for conversational AI models completed and results saved.")
