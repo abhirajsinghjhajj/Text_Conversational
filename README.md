@@ -43,7 +43,3 @@ The performance scores are normalized and weighted according to their importance
 3. View the output files:
     - **topsis_results_conversational.csv** for model ranking data.
     - **topsis_ranking_conversational.png** for a graphical representation.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
